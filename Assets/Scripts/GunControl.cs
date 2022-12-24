@@ -19,7 +19,7 @@ public class GunControl : MonoBehaviour
         {
             GameObject go = Instantiate(bullet,bulletPos.position,bulletPos.rotation) as GameObject;
             go.GetComponent<Rigidbody>().velocity = bulletPos.transform.forward * 10f;
-            Destroy(go);
+            Destroy(go,2f);
             
         }
     }
